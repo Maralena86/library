@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="titleLibraryContainer">
+        <h1>My Library</h1>
+        <img src="images/books.png" alt="books" >
+    </div>
+    <form class="formBook">
+        <div>
+            <label for="title">title </label>
+            <input id="title" type="text" name="title">
+        </div>
+        <div>
+            <label for="author">author </label>
+            <input id="author" type="text" name="author">
+        </div>
+        <div>
+            <label for="description">description </label>
+            <input id="description" type="textarea" name="description">
+        </div>
+        <div>
+            <label for="pages">pages </label>
+            <input id="pages" type="number" name="pages">
+        </div>
+        <button>
+            <div class="svg-wrapper-1">
+              <div class="svg-wrapper add">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path fill="currentColor" d="M1.9469.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.19.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                        </svg>
+                      </div>
+                   </div>
+                   <span><i class="fa-regular fa-square-plus"></i>
+                    Add Book</span>
+                  </button>
+        
+        
+    </form>
+    <div class="book-container">
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
