@@ -38,22 +38,31 @@ function displayBooks(myLibrary){
         const author = document.createElement("p");
         const description = document.createElement("p");
         const pages = document.createElement("p");
-        const removeBook = document.createElement("button");
+        const removeBookBtn = document.createElement("button");
 
         title.textContent = book.title;
         author.textContent = book.author;
         description.textContent = book.description;
         pages.textContent = book.pages;
-        removeBook.textContent = "Remove book";
-        removeBook.classList.add("btn-addBook")
+        removeBookBtn.textContent = "Remove book";
+        removeBookBtn.classList.add("btn-addBook")
 
         bookContainer.append(bookDiv);
         bookDiv.classList.add("bookDiv");
-        bookDiv.append(title, author, description, pages, removeBook);
-        console.log(bookContainer.childNodes);               
+        bookDiv.append(title, author, description, pages, removeBookBtn);
+        console.log(bookContainer.childNodes);
+        removeBookBtn.addEventListener("click", ()=>{
+            console.log(book)
+            myLibrary.splice(myLibrary.indexOf(book),1);
+        })
+
     });
 }
 
+function removeBook(removeBtn, book){
+    
+
+}
 
 const book1 = new Book('Las aventuras de pepe', 'pepe', 'el mejor libro', 5);
 const book2 = new Book('Las aventuras de pioi', 'Ploin', 'el mejor libro', 5);
